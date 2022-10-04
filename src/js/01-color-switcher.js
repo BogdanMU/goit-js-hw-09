@@ -1,5 +1,5 @@
 const delayInterval = 1000;
-let timerId = 0
+let timerId = null;
 
 const refs = {
     body: document.body,
