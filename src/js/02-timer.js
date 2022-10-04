@@ -39,7 +39,7 @@ function reverseTimer() {
    timerRefs.startTimer.disabled = true
   const intervalID = setInterval(() => {
     let timeLeft = (chosenTime - Date.now());
-    if (timeLeft < 500) {
+    if (timeLeft <= 0) {
       clearInterval(intervalID);
       Notiflix.Notify.info('TIME IS OUT');
       timerRefs.startTimer.disabled = false
